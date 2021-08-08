@@ -1,9 +1,10 @@
 import './App.css';
+import StartPage from './components/StartPage/StartPage';
 
 function App() {
   return (
-    <div className="App">
-      hi
+    <div className="app-wrapper">
+      <StartPage />
     </div>
   );
 }
