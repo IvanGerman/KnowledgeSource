@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styles from './StartPage.module.css';
-//import { NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import VanillaTilt from 'vanilla-tilt';
 
 const StartPage = (props) => {  
@@ -31,7 +31,7 @@ const StartPage = (props) => {
             <h3>Topics</h3>
             <br />
             <h4>here are the main topics of your learning materials</h4>
-            <a href="#">To the Topics</a>
+            <NavLink to = "/topics" >To the Topics</NavLink>
           </div>
         </div>
         <div className = { styles.card } id = { styles.stats } ref={refs.current[2]} >
@@ -39,7 +39,7 @@ const StartPage = (props) => {
             <h3>Stats</h3>
             <br />
             <h4>some informations about the stuff you want to memorize</h4>
-            <a href="#">To the Stats</a>
+            <NavLink to = "/stats" >To the Stats</NavLink>
           </div>
         </div>
       </div>
