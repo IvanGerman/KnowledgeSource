@@ -1,14 +1,14 @@
 import React from 'react';
-import styles from './Topic.module.css';
+import styles from './Top_Subtop_Creator.module.css';
 //import { NavLink } from 'react-router-dom';
 
-const Topic = (props) => {  
+const Top_Subtop_Creator = (props) => {  
 
   return (
     <div  className = { styles.wrapper }>
-      Single Topic
+      Top_Subtop_Creator
     </div>
   )
 };
 
-export default Topic;
+export default Top_Subtop_Creator;
