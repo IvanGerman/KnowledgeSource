@@ -2,6 +2,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import StartPage from './components/StartPage/StartPage';
 import Stats from './components/Stats/Stats';
+import SubTopics from './components/SubTopics/SubTopics';
 import Topics from './components/Topics/Topics';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Route exact path = '/' render = { () => <StartPage options={options} /> } />  
       <Route exact path = '/topics' render = { () => <Topics /> } />
       <Route exact path = '/stats' render = { () => <Stats /> } />
+      <Route exact path = '/subtopics' render = { () => <SubTopics /> } />
     </div>
   );
 }
