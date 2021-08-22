@@ -16,7 +16,7 @@ function App() {
     <div className="app-wrapper">
       <Route exact path = '/' render = { () => <StartPage options={options} /> } />  
       <Route exact path = '/topics' render = { () => <Topics /> } />
-      <Route exact path = '/stats' component = {Stats} />
+      <Route exact path = '/stats' render = { () => <Stats /> } />
     </div>
   );
 }
