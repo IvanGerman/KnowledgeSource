@@ -8,6 +8,7 @@ const Topic = (props) => {
   return (
     <div  className = { styles.wrapper }>
       Single Topic
+      <br/>
       <NavLink to = "/subtopics" >To the SubTopics</NavLink>
     </div>
   )

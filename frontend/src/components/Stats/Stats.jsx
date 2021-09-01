@@ -1,12 +1,14 @@
 import React from 'react';
+import BackButton from '../BackButton/BackButton';
 import styles from './Stats.module.css';
-//import { NavLink } from 'react-router-dom';
 
 const Stats = (props) => {  
+
 
   return (
     <div  className = { styles.wrapper }>
       Stats
+      <BackButton/>
     </div>
   )
 };

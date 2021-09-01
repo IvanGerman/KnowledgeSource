@@ -1,5 +1,6 @@
 import { Route } from 'react-router-dom';
-import './App.css';
+import styles from './App.module.css';
+import ContentBlocks from './components/ContentBlocks/ContentBlocks';
 import StartPage from './components/StartPage/StartPage';
 import Stats from './components/Stats/Stats';
 import SubTopics from './components/SubTopics/SubTopics';
@@ -11,14 +12,18 @@ function App() {
     max: 17,
     speed: 800,
     glare: true,
-    "max-glare": 1
+    "max-glare": 1,
+    scale: 1.05,
+    perspective: 2000,
+    transition: true
   };
   return (
-    <div className="app-wrapper">
+    <div className = { styles.wrapper } >
       <Route exact path = '/' render = { () => <StartPage options={options} /> } />  
       <Route exact path = '/topics' render = { () => <Topics /> } />
       <Route exact path = '/stats' render = { () => <Stats /> } />
-      <Route exact path = '/subtopics' render = { () => <SubTopics /> } />
+      <Route exact path = '/subtopics' render = { () => <SubTopics /> } /> 
+      <Route exact path = '/contentblocks' render = { () => <ContentBlocks /> } />
     </div>
   );
 }

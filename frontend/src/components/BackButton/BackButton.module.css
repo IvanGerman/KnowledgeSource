@@ -1,0 +1,9 @@
+.backButton {
+  cursor: pointer;
+  border: 1px solid #000000;
+  margin-top: 20px;
+  width: 5vw;
+  float: left;
+  grid-row: 2;
+  grid-column: 1;
+}

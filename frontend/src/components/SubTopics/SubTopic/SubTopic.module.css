@@ -1,0 +1,9 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background: rgb(35,145,168);
+  background: linear-gradient(90deg, rgba(35,145,168,1) 0%, rgba(38,110,156,1) 100%);
+}
