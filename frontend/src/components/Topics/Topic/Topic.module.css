@@ -1,0 +1,77 @@
+.wrapper {
+  min-height: 6vh;
+  min-width: 10vw;
+  margin-top: 3vh;
+}
+
+.wrapper a {
+  text-decoration: none;
+}
+
+.topic {
+  height: 40vh;
+  width: 14vw;
+  cursor: pointer;
+  border-radius: 15px;
+
+  display: grid;
+  grid-template-rows: 4fr 3.5fr 2.5fr;
+}
+
+.topicName {
+  width: 14vw;
+  display: grid;
+  align-items: center;  
+  justify-content: center;
+  font: bold 2.6vh Verdana;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.topicName div {
+  text-align: center;
+}
+
+.lastVisitDate {
+  font-size: 1.5vh;
+}
+
+.topicStats {
+  width: 14vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;  
+  justify-content: center;
+  background-color: #2492a9;
+  border: 1px solid #ffffff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topicStatsInnerDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+  font-size: 1.5vh;
+  color: #ffffff;
+}
+
+#topicStatsInnerDivMiddle {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+.picture {
+  width: 14vw;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  background-color: #3aeb22;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image: url('./../../../assets/images/Fish_dynamo1.jpg');
+  background-size: cover;
+}
