@@ -116,8 +116,10 @@ const SubTopics = (props) => {
       topicId: 'topic2'
     }
   ];
+ 
+  const arrForMap = arr.filter(elem => elem.topicId === 'topic1');;
 
-  const allSubTopics = arr.map((t, i) => <SubTopic name={arr[i].name} key={i} />);
+  const allSubTopics = arrForMap.map((t, i) => <SubTopic name={arrForMap[i].name} key={i} />);
 
   return (
     <div  className = { styles.wrapper }>
