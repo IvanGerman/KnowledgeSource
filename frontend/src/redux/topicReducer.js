@@ -16,7 +16,7 @@ let initialState = {
           creationDate: '01.07.2020',
           lastVisitDate: '22.05.2021',
           views: 53,
-          subTopicsNumber: 15
+          subTopicsNumber: 8
         },
         {
           id: 'topic3',

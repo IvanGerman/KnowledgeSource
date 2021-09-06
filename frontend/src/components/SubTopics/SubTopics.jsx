@@ -117,7 +117,7 @@ const SubTopics = (props) => {
     }
   ];
  
-  const arrForMap = arr.filter(elem => elem.topicId === 'topic1');;
+  const arrForMap = arr.filter(elem => elem.topicId === props.idForMaping);;
 
   const allSubTopics = arrForMap.map((t, i) => <SubTopic name={arrForMap[i].name} key={i} />);
 

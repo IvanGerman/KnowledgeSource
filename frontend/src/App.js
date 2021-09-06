@@ -3,8 +3,8 @@ import styles from './App.module.css';
 import ContentBlocks from './components/ContentBlocks/ContentBlocks';
 import StartPage from './components/StartPage/StartPage';
 import Stats from './components/Stats/Stats';
-import SubTopics from './components/SubTopics/SubTopics';
-import Topics from './components/Topics/Topics';
+import SubTopicsContainer from './components/SubTopics/SubTopicsContainer';
+import TopicsContainer from './components/Topics/TopicsContainer';
 
 function App() {
 
@@ -20,9 +20,9 @@ function App() {
   return (
     <div className = { styles.wrapper } >
       <Route exact path = '/' render = { () => <StartPage options={options} /> } />  
-      <Route exact path = '/topics' render = { () => <Topics /> } />
+      <Route exact path = '/topics' render = { () => <TopicsContainer /> } />
       <Route exact path = '/stats' render = { () => <Stats /> } />
-      <Route exact path = '/subtopics' render = { () => <SubTopics /> } /> 
+      <Route exact path = '/subtopics' render = { () => <SubTopicsContainer /> } /> 
       <Route exact path = '/contentblocks' render = { () => <ContentBlocks /> } />
     </div>
   );
