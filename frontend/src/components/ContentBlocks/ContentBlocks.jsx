@@ -10,13 +10,17 @@ import VideoBlock from './VideoBlock/VideoBlock';
 const ContentBlocks = (props) => {  
 
   return (
-    <div  className = { styles.wrapper }> 
-      <Text/>
-      <Link/>
-      <Picture/>
-      <AudioBlock/>
-      <VideoBlock/>
-      <BackButton/>
+    <div className={styles.wrapper}>
+      <div className={styles.allContentBlocks}>
+        <Text />
+        <Link />
+        <Picture />
+        <AudioBlock />
+        <VideoBlock />
+      </div>
+      <div className={styles.backButtonOuter}>
+        <BackButton />
+      </div>
     </div>
   )
 };
