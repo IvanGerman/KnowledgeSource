@@ -17,7 +17,7 @@ let initialState = {
         creationDate: '01.07.2020',
         lastVisitDate: '22.05.2021',
         views: 53,
-        contentBlocksNumber: 15,
+        contentBlocksNumber: 22,
         topicId: 'topic1'
       },
       {
@@ -26,7 +26,7 @@ let initialState = {
         creationDate: '07.11.2019',
         lastVisitDate: '15.07.2021',
         views: 133,
-        contentBlocksNumber: 15,
+        contentBlocksNumber: 5,
         topicId: 'topic1'
       },
       {

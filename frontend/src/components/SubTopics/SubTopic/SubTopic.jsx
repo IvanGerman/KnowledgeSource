@@ -6,6 +6,10 @@ import Tilt from 'react-parallax-tilt';
 
 const SubTopic = (props) => {  
 
+  const setIdForMaping = () => {
+    props.setIdForMaping(props.id);
+  };
+
   return (
     <Tilt>
     <div  className = { styles.wrapper }>
@@ -14,19 +18,19 @@ const SubTopic = (props) => {
           <div className = { styles.picture }></div>
           <div className = { styles.subtopicName }>
             <div>{props.name}</div>
-            <div className = { styles.lastVisitDate }>Last visited on 12.08.2021</div>
+            <div className = { styles.lastVisitDate }>Last visited on {props.lastVisitDate}</div>
           </div>
           <div className = { styles.subtopicStats }>
             <div className = { styles.subtopicStatsInnerDiv }>
-              <div>15</div>
+              <div>{props.contentBlocksNumber}</div>
               <div>content blocks</div>
             </div>
             <div className = { styles.subtopicStatsInnerDiv } id = { styles.subtopicStatsInnerDivMiddle }>
-              <div>156</div>
+              <div>{props.views}</div>
               <div>views</div>
             </div>
             <div className = { styles.subtopicStatsInnerDiv }>
-              <div>11.12.2019</div>
+              <div>{props.creationDate}</div>
               <div>created</div>
             </div>
           </div>
