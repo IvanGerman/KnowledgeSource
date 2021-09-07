@@ -1,6 +1,6 @@
 import { Route } from 'react-router-dom';
 import styles from './App.module.css';
-import ContentBlocks from './components/ContentBlocks/ContentBlocks';
+import ContentBlocksContainer from './components/ContentBlocks/ContentBlocksContainer';
 import StartPage from './components/StartPage/StartPage';
 import Stats from './components/Stats/Stats';
 import SubTopicsContainer from './components/SubTopics/SubTopicsContainer';
@@ -23,7 +23,7 @@ function App() {
       <Route exact path = '/topics' render = { () => <TopicsContainer /> } />
       <Route exact path = '/stats' render = { () => <Stats /> } />
       <Route exact path = '/subtopics' render = { () => <SubTopicsContainer /> } /> 
-      <Route exact path = '/contentblocks' render = { () => <ContentBlocks /> } />
+      <Route exact path = '/contentblocks' render = { () => <ContentBlocksContainer /> } />
     </div>
   );
 }

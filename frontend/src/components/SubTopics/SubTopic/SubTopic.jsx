@@ -14,7 +14,7 @@ const SubTopic = (props) => {
     <Tilt>
     <div  className = { styles.wrapper }>
       <NavLink to = "/contentblocks" >
-        <div className = { styles.subtopic } >
+        <div className = { styles.subtopic } onClick = { setIdForMaping }>
           <div className = { styles.picture }></div>
           <div className = { styles.subtopicName }>
             <div>{props.name}</div>
