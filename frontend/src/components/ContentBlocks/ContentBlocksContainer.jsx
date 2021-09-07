@@ -7,7 +7,7 @@ import ContentBlocks from './ContentBlocks';
 const mapStateToProps = (state) => {
 
    return {
-      
+      idForMaping: state.idForMaping.idForMaping,
       contentBlocks: state.contentBlocks.contentBlocks
 
    };
